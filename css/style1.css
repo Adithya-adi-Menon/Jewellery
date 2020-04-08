@@ -232,7 +232,7 @@ a:hover {
 	float: left;
 	cursor: pointer;
 	text-indent: -9999em;
-	background: url(../images/logo.png) no-repeat;
+	background: url(../images/mgj.png) no-repeat;
 }
 
 
@@ -356,7 +356,7 @@ a:hover {
 
 #slider .btn-more:hover{
 	text-decoration: none;
-	border: 1px solid #fff;
+	border: 1px solid; #fff;
 	color: #fff;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -1366,7 +1366,7 @@ h1 {
 @media (-webkit-min-device-pixel-ratio: 2), (min-reso#lution: 192dpi) {
 
 	#logo {
-		background-image: url(../images/logo@2x.png);
+		background-image: url(../images/mgj.png);
 		background-size: cover;
 	}
 
