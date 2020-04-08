@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <!--[if IE 8]> <html class="ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+
 <head>
 	<meta charset="utf-8">
 	<title>Sri Maha Ganapathi Jewellers.</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 	<link rel="stylesheet" media="all" href="css/style1.css">
+	<script src="js/magni.js" charset="utf-8"></script>
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
+
 <body>
 
 	<header id="header">
@@ -55,7 +60,10 @@
 			<div id="content" class="full">
 				<div class="product">
 					<div class="image">
-						<img src="images/5.jpg" alt="">
+						<div class="img-magnifier-container">
+							<img id="myimage" src="images/Rings/ring1.png" alt="Girl">
+						</div>
+						<!-- <img src="images/Rings/ring1.png" alt=""> -->
 					</div>
 					<div class="details">
 						<h1>Enter the details</h1>
@@ -87,6 +95,11 @@
 		<!-- / container -->
 	</div>
 	<!-- / body -->
+	<script>
+		/* Execute the magnify function: */
+		magnify("myimage", 3);
+		/* Specify the id of the image, and the strength of the magnifier glass: */
+	</script>
 
 	<footer id="footer">
 		<div class="container">
@@ -112,7 +125,7 @@
 				</div>
 				<div class="col contact">
 					<h3>Contact us</h3>
-					<p>Sri Maha Ganapathi Jewellers.<br>	84-85, 8th St,<br> Cross Cut Rd, Opp. Lakshmi Complex,<br>Gandhipuram, Tamil Nadu 641012</p>
+					<p>Sri Maha Ganapathi Jewellers.<br> 84-85, 8th St,<br> Cross Cut Rd, Opp. Lakshmi Complex,<br>Gandhipuram, Tamil Nadu 641012</p>
 					<p><span class="ico ico-em"></span><a href="#">Email</a></p>
 					<p><span class="ico ico-ph"></span>0422 421 2380</p>
 				</div>
@@ -133,8 +146,11 @@
 
 
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script>window.jQuery || document.write("<script src='js/jquery-1.11.1.min.js'>\x3C/script>")</script>
+	<script>
+		window.jQuery || document.write("<script src='js/jquery-1.11.1.min.js'>\x3C/script>")
+	</script>
 	<script src="js/plugins.js"></script>
 	<script src="js/main.js"></script>
 </body>
+
 </html>
