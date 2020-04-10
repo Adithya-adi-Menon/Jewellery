@@ -39,7 +39,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="log">
 
 				<h5>
-					<a class="sign" href="#" data-toggle="modal" data-target="#exampleModal">
+					<a class="sign" href="admin\login.php" data-toggle="modal" data-target="#exampleModal">
 						<i class="fas fa-user"></i> User Account</a>
 				</h5>
 			</div>
@@ -849,29 +849,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
-				<div class="modal-body video">
-					<div class="signin-form profile">
-						<div class="login-m_page">
-							<h3 class="sign">Sign Up</h3>
-							<div class="login-form">
-								<form action="#" method="post">
-									<input class="form-control" type="text" name="name" placeholder="Name" required="">
-									<input class="form-control" type="email" name="email" placeholder="Email" required="">
-									<input class="form-control" type="password" name="password" id="password1" placeholder="Password" required="">
-									<input class="form-control" type="password" name="password" id="password2" placeholder="Confirm Password" required="">
-									<input class="form-control" type="submit" value="Sign Up">
-								</form>
-							</div>
-							<p>
-								<a href="#"> By clicking Sign up, I agree to your terms</a>
-							</p>
-						</div>
-
-
-					</div>
-
-
-				</div>
 
 			</div>
 		</div>
@@ -881,23 +858,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script src="js/jquery-2.2.3.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<!-- //js -->
-	<!-- password-script -->
-	<script>
-		window.onload = function() {
-			document.getElementById("password1").onchange = validatePassword;
-			document.getElementById("password2").onchange = validatePassword;
-		}
 
-		function validatePassword() {
-			var pass2 = document.getElementById("password2").value;
-			var pass1 = document.getElementById("password1").value;
-			if (pass1 != pass2)
-				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
-			else
-				document.getElementById("password2").setCustomValidity('');
-			//empty string means no validation error
-		}
-	</script>
 	<!-- //password-script -->
 	<!-- required-js-files-->
 	<!-- carousel -->
